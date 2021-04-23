@@ -58,9 +58,8 @@
 		3EB13271263388750053B664 /* Music Inspiration */ = {
 			isa = PBXGroup;
 			children = (
-				3EB13272263388750053B664 /* AppDelegate.swift */,
-				3EB13274263388750053B664 /* SceneDelegate.swift */,
 				3EB13276263388750053B664 /* ContentView.swift */,
+				3EB1328A263388A90053B664 /* Delegates */,
 				3EB1327B263388830053B664 /* Assets.xcassets */,
 				3EB13280263388830053B664 /* LaunchScreen.storyboard */,
 				3EB13283263388830053B664 /* Info.plist */,
@@ -76,6 +75,15 @@
 				3EB1327E263388830053B664 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3EB1328A263388A90053B664 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				3EB13274263388750053B664 /* SceneDelegate.swift */,
+				3EB13272263388750053B664 /* AppDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
