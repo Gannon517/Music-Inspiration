@@ -8,8 +8,35 @@
 import SwiftUI
 
 struct Home: View {
+    
+    @EnvironmentObject var userData: UserData
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.gray.opacity(0.1).edgesIgnoringSafeArea(.all)
+        ScrollView {
+            Image("Welcome")
+                .padding(.top, 50)
+            
+            Image("ImageUnavailable")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(minWidth: 300, maxWidth: 500, alignment: .center)
+                .padding()
+            
+            Text("Powered By:")
+                .padding(.bottom, 20)
+            
+            Link(destination: URL(string: "https://www.google.com")!) {
+                HStack {
+                    Image(systemName: "gearshape.2")
+                    Text("Musci DB API")
+                }
+            }
+            .padding()
+            
+        }//End Scroll View
+        }//End ZStack
     }
 }
 

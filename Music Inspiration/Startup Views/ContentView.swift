@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var userData: UserData
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        if userData.userAuthenticated {
+            return AnyView(MainView())
+        }
+        else {
+            return AnyView(LoginView())
+        }
     }
 }
 

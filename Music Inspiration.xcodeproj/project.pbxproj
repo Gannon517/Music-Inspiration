@@ -19,6 +19,11 @@
 		3EB1329B2637BEC20053B664 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1329A2637BEC20053B664 /* Home.swift */; };
 		3EB1329F2637C0000053B664 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1329E2637C0000053B664 /* Song.swift */; };
 		3EB132A22637C1330053B664 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB132A12637C1330053B664 /* Photo.swift */; };
+		3EB132A52637C9370053B664 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB132A42637C9370053B664 /* UserData.swift */; };
+		3EB132A82637C9510053B664 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB132A72637C9510053B664 /* MainView.swift */; };
+		3EB132AB2637C95A0053B664 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB132AA2637C95A0053B664 /* LoginView.swift */; };
+		3EB132AE2637C9650053B664 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB132AD2637C9650053B664 /* ForgotPassword.swift */; };
+		3EB132B22637CA260053B664 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB132B12637CA260053B664 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		3EB1329A2637BEC20053B664 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		3EB1329E2637C0000053B664 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		3EB132A12637C1330053B664 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		3EB132A42637C9370053B664 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		3EB132A72637C9510053B664 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3EB132AA2637C95A0053B664 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3EB132AD2637C9650053B664 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		3EB132B12637CA260053B664 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +123,7 @@
 		3EB1328D2637BDEF0053B664 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
+				3EB132A42637C9370053B664 /* UserData.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -127,6 +138,7 @@
 		3EB1328F2637BE120053B664 /* Tab Bar Views */ = {
 			isa = PBXGroup;
 			children = (
+				3EB132B02637CA1A0053B664 /* Settings */,
 				3EB132992637BEB10053B664 /* Home */,
 			);
 			path = "Tab Bar Views";
@@ -136,6 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				3EB13276263388750053B664 /* ContentView.swift */,
+				3EB132A72637C9510053B664 /* MainView.swift */,
+				3EB132AA2637C95A0053B664 /* LoginView.swift */,
+				3EB132AD2637C9650053B664 /* ForgotPassword.swift */,
 			);
 			path = "Startup Views";
 			sourceTree = "<group>";
@@ -155,6 +170,14 @@
 				3EB1329A2637BEC20053B664 /* Home.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		3EB132B02637CA1A0053B664 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3EB132B12637CA260053B664 /* Settings.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,10 +254,15 @@
 				3EB13275263388750053B664 /* SceneDelegate.swift in Sources */,
 				3EB1327A263388760053B664 /* Music_Inspiration.xcdatamodeld in Sources */,
 				3EB132A22637C1330053B664 /* Photo.swift in Sources */,
+				3EB132B22637CA260053B664 /* Settings.swift in Sources */,
 				3EB132972637BE9C0053B664 /* ImagePicker.swift in Sources */,
 				3EB1329F2637C0000053B664 /* Song.swift in Sources */,
+				3EB132AB2637C95A0053B664 /* LoginView.swift in Sources */,
 				3EB13277263388750053B664 /* ContentView.swift in Sources */,
+				3EB132A82637C9510053B664 /* MainView.swift in Sources */,
 				3EB132932637BE850053B664 /* PhotoCaptureView.swift in Sources */,
+				3EB132AE2637C9650053B664 /* ForgotPassword.swift in Sources */,
+				3EB132A52637C9370053B664 /* UserData.swift in Sources */,
 				3EB1329B2637BEC20053B664 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
