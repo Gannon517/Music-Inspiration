@@ -14,6 +14,11 @@
 		3EB1327C263388830053B664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB1327B263388830053B664 /* Assets.xcassets */; };
 		3EB1327F263388830053B664 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB1327E263388830053B664 /* Preview Assets.xcassets */; };
 		3EB13282263388830053B664 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB13280263388830053B664 /* LaunchScreen.storyboard */; };
+		3EB132932637BE850053B664 /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB132922637BE850053B664 /* PhotoCaptureView.swift */; };
+		3EB132972637BE9C0053B664 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB132962637BE9C0053B664 /* ImagePicker.swift */; };
+		3EB1329B2637BEC20053B664 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1329A2637BEC20053B664 /* Home.swift */; };
+		3EB1329F2637C0000053B664 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1329E2637C0000053B664 /* Song.swift */; };
+		3EB132A22637C1330053B664 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB132A12637C1330053B664 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		3EB1327E263388830053B664 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3EB13281263388830053B664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EB13283263388830053B664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EB132922637BE850053B664 /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
+		3EB132962637BE9C0053B664 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		3EB1329A2637BEC20053B664 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		3EB1329E2637C0000053B664 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		3EB132A12637C1330053B664 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +68,16 @@
 		3EB13271263388750053B664 /* Music Inspiration */ = {
 			isa = PBXGroup;
 			children = (
-				3EB13276263388750053B664 /* ContentView.swift */,
+				3EB132912637BE4F0053B664 /* Take or Pick Photo */,
+				3EB1328F2637BE120053B664 /* Tab Bar Views */,
+				3EB1328E2637BDFE0053B664 /* Supporting Files */,
+				3EB1328D2637BDEF0053B664 /* Data Model */,
+				3EB1328B2637BC420053B664 /* Core Data Model */,
+				3EB132902637BE3D0053B664 /* Startup Views */,
 				3EB1328A263388A90053B664 /* Delegates */,
 				3EB1327B263388830053B664 /* Assets.xcassets */,
 				3EB13280263388830053B664 /* LaunchScreen.storyboard */,
 				3EB13283263388830053B664 /* Info.plist */,
-				3EB13278263388760053B664 /* Music_Inspiration.xcdatamodeld */,
 				3EB1327D263388830053B664 /* Preview Content */,
 			);
 			path = "Music Inspiration";
@@ -84,6 +98,63 @@
 				3EB13272263388750053B664 /* AppDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		3EB1328B2637BC420053B664 /* Core Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				3EB13278263388760053B664 /* Music_Inspiration.xcdatamodeld */,
+				3EB1329E2637C0000053B664 /* Song.swift */,
+				3EB132A12637C1330053B664 /* Photo.swift */,
+			);
+			path = "Core Data Model";
+			sourceTree = "<group>";
+		};
+		3EB1328D2637BDEF0053B664 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		3EB1328E2637BDFE0053B664 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EB1328F2637BE120053B664 /* Tab Bar Views */ = {
+			isa = PBXGroup;
+			children = (
+				3EB132992637BEB10053B664 /* Home */,
+			);
+			path = "Tab Bar Views";
+			sourceTree = "<group>";
+		};
+		3EB132902637BE3D0053B664 /* Startup Views */ = {
+			isa = PBXGroup;
+			children = (
+				3EB13276263388750053B664 /* ContentView.swift */,
+			);
+			path = "Startup Views";
+			sourceTree = "<group>";
+		};
+		3EB132912637BE4F0053B664 /* Take or Pick Photo */ = {
+			isa = PBXGroup;
+			children = (
+				3EB132922637BE850053B664 /* PhotoCaptureView.swift */,
+				3EB132962637BE9C0053B664 /* ImagePicker.swift */,
+			);
+			path = "Take or Pick Photo";
+			sourceTree = "<group>";
+		};
+		3EB132992637BEB10053B664 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3EB1329A2637BEC20053B664 /* Home.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +230,12 @@
 				3EB13273263388750053B664 /* AppDelegate.swift in Sources */,
 				3EB13275263388750053B664 /* SceneDelegate.swift in Sources */,
 				3EB1327A263388760053B664 /* Music_Inspiration.xcdatamodeld in Sources */,
+				3EB132A22637C1330053B664 /* Photo.swift in Sources */,
+				3EB132972637BE9C0053B664 /* ImagePicker.swift in Sources */,
+				3EB1329F2637C0000053B664 /* Song.swift in Sources */,
 				3EB13277263388750053B664 /* ContentView.swift in Sources */,
+				3EB132932637BE850053B664 /* PhotoCaptureView.swift in Sources */,
+				3EB1329B2637BEC20053B664 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
