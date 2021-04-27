@@ -25,7 +25,6 @@
 		3EB132AE2637C9650053B664 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB132AD2637C9650053B664 /* ForgotPassword.swift */; };
 		3EB132B22637CA260053B664 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB132B12637CA260053B664 /* Settings.swift */; };
 		3EE1938E2637DD0800B695F7 /* music.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EE1938D2637DD0800B695F7 /* music.json */; };
-		3EE193912637DD9200B695F7 /* MusicStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193902637DD9200B695F7 /* MusicStruct.swift */; };
 		3EE193942637DDB300B695F7 /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193932637DDB300B695F7 /* MusicData.swift */; };
 		3EE193972637DDE400B695F7 /* UtiliyFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193962637DDE400B695F7 /* UtiliyFunctions.swift */; };
 		3EE1939B2637DE5700B695F7 /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1939A2637DE5700B695F7 /* SongList.swift */; };
@@ -39,6 +38,8 @@
 		3EE193B52637E27900B695F7 /* SearchResultDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193B42637E27900B695F7 /* SearchResultDetails.swift */; };
 		3EE193B82637E2AF00B695F7 /* SearchResultsEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193B72637E2AF00B695F7 /* SearchResultsEmpty.swift */; };
 		3EE193BC2637E32E00B695F7 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193BB2637E32E00B695F7 /* SearchAPI.swift */; };
+		4B1F7A9B263843BE0072743A /* MusicStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F7A9A263843BE0072743A /* MusicStruct.swift */; };
+		4B1F7AA026387AA70072743A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F7A9F26387AA70072743A /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,7 +63,6 @@
 		3EB132AD2637C9650053B664 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		3EB132B12637CA260053B664 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		3EE1938D2637DD0800B695F7 /* music.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = music.json; sourceTree = "<group>"; };
-		3EE193902637DD9200B695F7 /* MusicStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicStruct.swift; sourceTree = "<group>"; };
 		3EE193932637DDB300B695F7 /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicData.swift; sourceTree = "<group>"; };
 		3EE193962637DDE400B695F7 /* UtiliyFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtiliyFunctions.swift; sourceTree = "<group>"; };
 		3EE1939A2637DE5700B695F7 /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
@@ -76,6 +76,8 @@
 		3EE193B42637E27900B695F7 /* SearchResultDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDetails.swift; sourceTree = "<group>"; };
 		3EE193B72637E2AF00B695F7 /* SearchResultsEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsEmpty.swift; sourceTree = "<group>"; };
 		3EE193BB2637E32E00B695F7 /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
+		4B1F7A9A263843BE0072743A /* MusicStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicStruct.swift; sourceTree = "<group>"; };
+		4B1F7A9F26387AA70072743A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,9 +156,9 @@
 			isa = PBXGroup;
 			children = (
 				3EE1938D2637DD0800B695F7 /* music.json */,
-				3EE193902637DD9200B695F7 /* MusicStruct.swift */,
 				3EE193932637DDB300B695F7 /* MusicData.swift */,
 				3EB132A42637C9370053B664 /* UserData.swift */,
+				4B1F7A9A263843BE0072743A /* MusicStruct.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -166,6 +168,7 @@
 			children = (
 				3EE193962637DDE400B695F7 /* UtiliyFunctions.swift */,
 				3EE193B72637E2AF00B695F7 /* SearchResultsEmpty.swift */,
+				4B1F7A9F26387AA70072743A /* WebView.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -339,14 +342,15 @@
 				3EE193A82637DECB00B695F7 /* ChangeSong.swift in Sources */,
 				3EB132932637BE850053B664 /* PhotoCaptureView.swift in Sources */,
 				3EE1939B2637DE5700B695F7 /* SongList.swift in Sources */,
+				4B1F7AA026387AA70072743A /* WebView.swift in Sources */,
 				3EB132AE2637C9650053B664 /* ForgotPassword.swift in Sources */,
 				3EB132A52637C9370053B664 /* UserData.swift in Sources */,
 				3EB1329B2637BEC20053B664 /* Home.swift in Sources */,
+				4B1F7A9B263843BE0072743A /* MusicStruct.swift in Sources */,
 				3EE193BC2637E32E00B695F7 /* SearchAPI.swift in Sources */,
 				3EE193B52637E27900B695F7 /* SearchResultDetails.swift in Sources */,
 				3EE193A22637DE9100B695F7 /* SongDetails.swift in Sources */,
 				3EE193972637DDE400B695F7 /* UtiliyFunctions.swift in Sources */,
-				3EE193912637DD9200B695F7 /* MusicStruct.swift in Sources */,
 				3EE193A52637DEB600B695F7 /* AddSong.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

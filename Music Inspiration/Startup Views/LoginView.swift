@@ -26,14 +26,14 @@ struct LoginView : View {
                     Image("Welcome")
                         .padding(.top, 30)
                    
-                    Text("Music Inspiration")
+                    Text("Audio Inspiration")
                         .font(.headline)
                         .padding()
                    
-                    Image("ImageUnavailable")
+                    Image("Inspiration")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(minWidth: 300, maxWidth: 600)
+                        .frame(minWidth: 300, maxWidth: 600, maxHeight: 300)
                         .padding()
                    
                     SecureField("Password", text: $enteredPassword)

@@ -59,6 +59,26 @@ struct SongDetails: View {
             Section(header: Text("My Rating")) {
                 Text(song.rating ?? "")
             }
+            Section(header: Text("Play Song on Apple Music")) {
+                NavigationLink(destination:
+                                WebView(url: "https://music.apple.com/us/album/no-tears-left-to-cry/1399202900?i=1399204228")
+                                .navigationBarTitle(Text("Play Song"), displayMode: .inline)
+                ){
+                    HStack {
+                        Image(systemName: "play.fill")
+                            .imageScale(.medium)
+                            .font(Font.title.weight(.regular))
+                            .foregroundColor(.blue)
+                        Text("Play Song on Apple Music")
+                            .font(.system(size: 16))
+                            .foregroundColor(.blue)
+                    }
+                    .frame(minWidth: 300, maxWidth: 500, alignment: .leading)
+                }
+                
+                
+            }
+
  
         }   // End of Form
         .navigationBarTitle(Text("Song Details"), displayMode: .inline)

@@ -18,7 +18,7 @@ struct Home: View {
             Image("Welcome")
                 .padding(.top, 50)
             
-            Image("ImageUnavailable")
+            Image("albumCoverArtGrid")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(minWidth: 300, maxWidth: 500, alignment: .center)
