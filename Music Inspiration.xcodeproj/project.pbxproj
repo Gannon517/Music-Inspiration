@@ -24,6 +24,21 @@
 		3EB132AB2637C95A0053B664 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB132AA2637C95A0053B664 /* LoginView.swift */; };
 		3EB132AE2637C9650053B664 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB132AD2637C9650053B664 /* ForgotPassword.swift */; };
 		3EB132B22637CA260053B664 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB132B12637CA260053B664 /* Settings.swift */; };
+		3EE1938E2637DD0800B695F7 /* music.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EE1938D2637DD0800B695F7 /* music.json */; };
+		3EE193912637DD9200B695F7 /* MusicStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193902637DD9200B695F7 /* MusicStruct.swift */; };
+		3EE193942637DDB300B695F7 /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193932637DDB300B695F7 /* MusicData.swift */; };
+		3EE193972637DDE400B695F7 /* UtiliyFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193962637DDE400B695F7 /* UtiliyFunctions.swift */; };
+		3EE1939B2637DE5700B695F7 /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1939A2637DE5700B695F7 /* SongList.swift */; };
+		3EE1939F2637DE7800B695F7 /* SongItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1939E2637DE7800B695F7 /* SongItem.swift */; };
+		3EE193A22637DE9100B695F7 /* SongDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193A12637DE9100B695F7 /* SongDetails.swift */; };
+		3EE193A52637DEB600B695F7 /* AddSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193A42637DEB600B695F7 /* AddSong.swift */; };
+		3EE193A82637DECB00B695F7 /* ChangeSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193A72637DECB00B695F7 /* ChangeSong.swift */; };
+		3EE193AC2637E22600B695F7 /* SearchDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193AB2637E22600B695F7 /* SearchDatabase.swift */; };
+		3EE193AF2637E23E00B695F7 /* SearchResultsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193AE2637E23E00B695F7 /* SearchResultsList.swift */; };
+		3EE193B22637E25900B695F7 /* SearchResultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193B12637E25900B695F7 /* SearchResultItem.swift */; };
+		3EE193B52637E27900B695F7 /* SearchResultDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193B42637E27900B695F7 /* SearchResultDetails.swift */; };
+		3EE193B82637E2AF00B695F7 /* SearchResultsEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193B72637E2AF00B695F7 /* SearchResultsEmpty.swift */; };
+		3EE193BC2637E32E00B695F7 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193BB2637E32E00B695F7 /* SearchAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +61,21 @@
 		3EB132AA2637C95A0053B664 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3EB132AD2637C9650053B664 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		3EB132B12637CA260053B664 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		3EE1938D2637DD0800B695F7 /* music.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = music.json; sourceTree = "<group>"; };
+		3EE193902637DD9200B695F7 /* MusicStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicStruct.swift; sourceTree = "<group>"; };
+		3EE193932637DDB300B695F7 /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicData.swift; sourceTree = "<group>"; };
+		3EE193962637DDE400B695F7 /* UtiliyFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtiliyFunctions.swift; sourceTree = "<group>"; };
+		3EE1939A2637DE5700B695F7 /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
+		3EE1939E2637DE7800B695F7 /* SongItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongItem.swift; sourceTree = "<group>"; };
+		3EE193A12637DE9100B695F7 /* SongDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetails.swift; sourceTree = "<group>"; };
+		3EE193A42637DEB600B695F7 /* AddSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSong.swift; sourceTree = "<group>"; };
+		3EE193A72637DECB00B695F7 /* ChangeSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSong.swift; sourceTree = "<group>"; };
+		3EE193AB2637E22600B695F7 /* SearchDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDatabase.swift; sourceTree = "<group>"; };
+		3EE193AE2637E23E00B695F7 /* SearchResultsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsList.swift; sourceTree = "<group>"; };
+		3EE193B12637E25900B695F7 /* SearchResultItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultItem.swift; sourceTree = "<group>"; };
+		3EE193B42637E27900B695F7 /* SearchResultDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDetails.swift; sourceTree = "<group>"; };
+		3EE193B72637E2AF00B695F7 /* SearchResultsEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsEmpty.swift; sourceTree = "<group>"; };
+		3EE193BB2637E32E00B695F7 /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +153,9 @@
 		3EB1328D2637BDEF0053B664 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
+				3EE1938D2637DD0800B695F7 /* music.json */,
+				3EE193902637DD9200B695F7 /* MusicStruct.swift */,
+				3EE193932637DDB300B695F7 /* MusicData.swift */,
 				3EB132A42637C9370053B664 /* UserData.swift */,
 			);
 			path = "Data Model";
@@ -131,6 +164,8 @@
 		3EB1328E2637BDFE0053B664 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3EE193962637DDE400B695F7 /* UtiliyFunctions.swift */,
+				3EE193B72637E2AF00B695F7 /* SearchResultsEmpty.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,8 +173,11 @@
 		3EB1328F2637BE120053B664 /* Tab Bar Views */ = {
 			isa = PBXGroup;
 			children = (
-				3EB132B02637CA1A0053B664 /* Settings */,
 				3EB132992637BEB10053B664 /* Home */,
+				3EE193992637DE2600B695F7 /* Favorites */,
+				3EE193AA2637E20200B695F7 /* Search Database */,
+				3EE193BA2637E30F00B695F7 /* Search API */,
+				3EB132B02637CA1A0053B664 /* Settings */,
 			);
 			path = "Tab Bar Views";
 			sourceTree = "<group>";
@@ -178,6 +216,37 @@
 				3EB132B12637CA260053B664 /* Settings.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		3EE193992637DE2600B695F7 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				3EE1939A2637DE5700B695F7 /* SongList.swift */,
+				3EE1939E2637DE7800B695F7 /* SongItem.swift */,
+				3EE193A12637DE9100B695F7 /* SongDetails.swift */,
+				3EE193A42637DEB600B695F7 /* AddSong.swift */,
+				3EE193A72637DECB00B695F7 /* ChangeSong.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		3EE193AA2637E20200B695F7 /* Search Database */ = {
+			isa = PBXGroup;
+			children = (
+				3EE193AB2637E22600B695F7 /* SearchDatabase.swift */,
+				3EE193AE2637E23E00B695F7 /* SearchResultsList.swift */,
+				3EE193B12637E25900B695F7 /* SearchResultItem.swift */,
+				3EE193B42637E27900B695F7 /* SearchResultDetails.swift */,
+			);
+			path = "Search Database";
+			sourceTree = "<group>";
+		};
+		3EE193BA2637E30F00B695F7 /* Search API */ = {
+			isa = PBXGroup;
+			children = (
+				3EE193BB2637E32E00B695F7 /* SearchAPI.swift */,
+			);
+			path = "Search API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +309,7 @@
 				3EB13282263388830053B664 /* LaunchScreen.storyboard in Resources */,
 				3EB1327F263388830053B664 /* Preview Assets.xcassets in Resources */,
 				3EB1327C263388830053B664 /* Assets.xcassets in Resources */,
+				3EE1938E2637DD0800B695F7 /* music.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,15 +325,29 @@
 				3EB1327A263388760053B664 /* Music_Inspiration.xcdatamodeld in Sources */,
 				3EB132A22637C1330053B664 /* Photo.swift in Sources */,
 				3EB132B22637CA260053B664 /* Settings.swift in Sources */,
+				3EE193942637DDB300B695F7 /* MusicData.swift in Sources */,
+				3EE193AF2637E23E00B695F7 /* SearchResultsList.swift in Sources */,
 				3EB132972637BE9C0053B664 /* ImagePicker.swift in Sources */,
+				3EE193B22637E25900B695F7 /* SearchResultItem.swift in Sources */,
 				3EB1329F2637C0000053B664 /* Song.swift in Sources */,
+				3EE193AC2637E22600B695F7 /* SearchDatabase.swift in Sources */,
+				3EE1939F2637DE7800B695F7 /* SongItem.swift in Sources */,
+				3EE193B82637E2AF00B695F7 /* SearchResultsEmpty.swift in Sources */,
 				3EB132AB2637C95A0053B664 /* LoginView.swift in Sources */,
 				3EB13277263388750053B664 /* ContentView.swift in Sources */,
 				3EB132A82637C9510053B664 /* MainView.swift in Sources */,
+				3EE193A82637DECB00B695F7 /* ChangeSong.swift in Sources */,
 				3EB132932637BE850053B664 /* PhotoCaptureView.swift in Sources */,
+				3EE1939B2637DE5700B695F7 /* SongList.swift in Sources */,
 				3EB132AE2637C9650053B664 /* ForgotPassword.swift in Sources */,
 				3EB132A52637C9370053B664 /* UserData.swift in Sources */,
 				3EB1329B2637BEC20053B664 /* Home.swift in Sources */,
+				3EE193BC2637E32E00B695F7 /* SearchAPI.swift in Sources */,
+				3EE193B52637E27900B695F7 /* SearchResultDetails.swift in Sources */,
+				3EE193A22637DE9100B695F7 /* SongDetails.swift in Sources */,
+				3EE193972637DDE400B695F7 /* UtiliyFunctions.swift in Sources */,
+				3EE193912637DD9200B695F7 /* MusicStruct.swift in Sources */,
+				3EE193A52637DEB600B695F7 /* AddSong.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

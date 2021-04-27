@@ -1,0 +1,202 @@
+[
+    {
+        "artistName": "Tame Impala",
+        "albumName": "The Slow Rush",
+        "songName": "One More Year",
+        "genre": "Psychedelic Pop, Disco, Prog Pop, Soft Rock, Electronic",
+        "rating": "Excellent",
+        "releaseDate": "February 14, 2020",
+        "coverPhotoFilename": "TameImpala_TheSlowRush",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Rod Stewart",
+        "albumName": "You're in My Heart",
+        "songName": "Maggie May",
+        "genre": "Pop/Rock, Vocal",
+        "rating": "Good",
+        "releaseDate": "November 22, 2019",
+        "coverPhotoFilename": "RodStewart_YouAreInMyHeart",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Eminem",
+        "albumName": "Music to Be Murdered By",
+        "songName": "Darkness",
+        "genre": "Hip Hop, Horrorcore",
+        "rating": "Fair",
+        "releaseDate": "January 17, 2020",
+        "coverPhotoFilename": "Eminem_MusicToBeMurderedBy",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Justin Bieber",
+        "albumName": "Changes",
+        "songName": "All Around Me",
+        "genre": "Pop, Rhythm and Blues",
+        "rating": "Average",
+        "releaseDate": "February 14, 2020",
+        "coverPhotoFilename": "JustinBieber_Changes",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Selena Gomez",
+        "albumName": "Rare",
+        "songName": "Dance Again",
+        "genre": "Pop, Dance",
+        "rating": "Excellent",
+        "releaseDate": "January 10, 2020",
+        "coverPhotoFilename": "SelenaGomez_Rare",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Weyes Blood",
+        "albumName": "Titanic Rising",
+        "songName": "Andromeda",
+        "genre": "Chamber Pop, Soft Rock, Alternative/Indie",
+        "rating": "Good",
+        "releaseDate": "April 5, 2019",
+        "coverPhotoFilename": "WeyesBlood_TitanicRising",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Dua Lipa",
+        "albumName": "Future Nostalgia",
+        "songName": "Break My Heart",
+        "genre": "Dance Pop, Disco",
+        "rating": "Good",
+        "releaseDate": "March 25, 2020",
+        "coverPhotoFilename": "DuaLipa_FutureNostalgia",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Fiona Apple",
+        "albumName": "Fetch the Bolt Cutters",
+        "songName": "Fetch the Bolt Cutters",
+        "genre": "Pop/Rock, Adult Alternative Pop/Rock, Alternative/Indie Rock, Alternative Singer/Songwriter",
+        "rating": "Excellent",
+        "releaseDate": "April 17, 2020",
+        "coverPhotoFilename": "FionaApple_FetchTheBoltCutters",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Taylor Swift",
+        "albumName": "Reputation",
+        "songName": "Gorgeous",
+        "genre": "Trap, Electro Pop, Big Machine Records, Pop",
+        "rating": "Excellent",
+        "releaseDate": "October 20, 2017",
+        "coverPhotoFilename": "TaylorSwift_Reputation",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Beyoncé",
+        "albumName": "Lemonade",
+        "songName": "Hold Up",
+        "genre": "Rhythm and Blues",
+        "rating": "Good",
+        "releaseDate": "April 23, 2016",
+        "coverPhotoFilename": "Beyonce_Lemonade",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Lady Gaga and Bradley Cooper",
+        "albumName": "A Star is Born Soundtrack",
+        "songName": "Shallow",
+        "genre": "Country, Folk Pop",
+        "rating": "Average",
+        "releaseDate": "September 27, 2018",
+        "coverPhotoFilename": "LadyGagaBradleyCooper_AStarIsBorn",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Kacey Musgraves",
+        "albumName": "Golden Hour",
+        "songName": "Space Cowboy",
+        "genre": "Alternative Country, Country Pop‎, Pop",
+        "rating": "Fair",
+        "releaseDate": "March 30, 2018",
+        "coverPhotoFilename": "KaceyMusgraves_GoldenHour",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Ariana Grande",
+        "albumName": "Sweetner",
+        "songName": "No Tears Left to Cry",
+        "genre": "Pop, Rhythm and Blues, Trap",
+        "rating": "Excellent",
+        "releaseDate": "August 17, 2018",
+        "coverPhotoFilename": "ArianaGrande_Sweetner",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Selena Gomez",
+        "albumName": "Revival",
+        "songName": "Hands To Myself",
+        "genre": "Dance Pop, Electropop",
+        "rating": "Good",
+        "releaseDate": "October 9, 2015",
+        "coverPhotoFilename": "SelenaGomez_Revival",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Katy Perry",
+        "albumName": "Witness",
+        "songName": "Bon Appétit",
+        "genre": "Electropop",
+        "rating": "Average",
+        "releaseDate": "June 9, 2017",
+        "coverPhotoFilename": "KatyPerry_Witness",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Carrie Underwood",
+        "albumName": "Cry Pretty",
+        "songName": "Ghosts on the Stereo",
+        "genre": "Country Pop, Rhythm and Blues",
+        "rating": "Fair",
+        "releaseDate": "September 14, 2018",
+        "coverPhotoFilename": "CarrieUnderwood_CryPretty",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Ludwig Goransson",
+        "albumName": "Black Panther Soundtrack",
+        "songName": "All the Stars",
+        "genre": "Experimental Hip Hop, Pop Rap",
+        "rating": "Excellent",
+        "releaseDate": "February 9, 2018",
+        "coverPhotoFilename": "LudwigGoransson_BlackPanther",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Miley Cyrus",
+        "albumName": "Younger Now",
+        "songName": "Younger Now",
+        "genre": "Country Pop, Pop Rock",
+        "rating": "Good",
+        "releaseDate": "September 29, 2017",
+        "coverPhotoFilename": "MileyCyrus_YoungerNow",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "Queen",
+        "albumName": "Bohemian Rhapsody Soundtrack",
+        "songName": "Bohemian Rhapsody",
+        "genre": "Progressive Rock, Pop, Heavy Metal, Hard Rock",
+        "rating": "Excellent",
+        "releaseDate": "October 19, 2018",
+        "coverPhotoFilename": "Queen_BohemianRhapsody",
+        "musicVideID": "lol"
+    },
+    {
+        "artistName": "George Ezra",
+        "albumName": "Staying at Tamara’s",
+        "songName": "Paradise",
+        "genre": "Folk Pop",
+        "rating": "Average",
+        "releaseDate": "March 23, 2018",
+        "coverPhotoFilename": "GeorgeEzra_StayingAtTamaras",
+        "musicVideID": "lol"
+    }
+]

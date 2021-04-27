@@ -35,6 +35,11 @@ struct Home: View {
             }
             .padding()
             
+            Text("Created By:")
+                .padding(.bottom, 10)
+            Text("Michael Gannon &")
+            Text("Gurkaran Nibber")
+            
         }//End Scroll View
         }//End ZStack
     }
