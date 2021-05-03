@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import LocalAuthentication
 
 struct LoginView : View {
    
@@ -15,7 +16,9 @@ struct LoginView : View {
     @State private var enteredPassword = ""
     @State private var showInvalidPasswordAlert = false
     
-    
+    let context = LAContext()
+    @State private var error: NSError?
+    @State private var unlock = false
    
     var body: some View {
         NavigationView {
@@ -54,25 +57,56 @@ struct LoginView : View {
                         }) {
                             Text("Login")
                                 .frame(width: 100, height: 36, alignment: .center)
-                                .padding(.leading, 10)
+                                .padding(.leading, 25)
                                 .background(
                                     RoundedRectangle(cornerRadius: 16)
                                         .strokeBorder(Color.black, lineWidth: 1)
-                                        .padding(.leading, 10)
+                                        .padding(.leading, 30)
                                 )
                             Spacer()
                         }
+                        
+                        Button(action: {
+                            if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
+                                context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: "Identify yourself!") { success, authenticationError in
+                                    DispatchQueue.main.async {
+                                        if success {
+                                            userData.userAuthenticated = true
+                                        }
+                                        else {
+                                            //error
+                                            let ac = UIAlertController(title: "Authentication failed!", message: "You could not be verified, please try again", preferredStyle: .alert)
+                                            ac.addAction(UIAlertAction(title: "OK", style: .default))
+                                            //self.present(ac, animated: true)
+                                        }
+                                    }
+                                }
+                            }
+                            else {
+                                //cannot use FaceID
+                            }
+                        }) {
+                            Image(systemName: "faceid")
+                                .font(Font.title.weight(.regular))
+                                .imageScale(.large)
+                                .frame(width: 100, height: 36, alignment: .center)
+                                .padding(.trailing, 10)
+                        }
+                        
                         let securityAnswer = UserDefaults.standard.string(forKey: "SecurityAnswer")
                         if securityAnswer != nil {
+                            //Spacer()
                             NavigationLink(destination: ForgotPassword()) {
+                                Spacer()
                                 Text("Forgot Password")
-                                    .frame(width: 200, height: 36, alignment: .center)
+                                    .frame(width: 140, height: 36, alignment: .center)
                                     .padding(.trailing, 10)
                                     .background(
                                         RoundedRectangle(cornerRadius: 16)
                                             .strokeBorder(Color.black, lineWidth: 1)
+                                            .padding(.trailing, 10)
                                     )
-                                Spacer()
+                                //Spacer()
                             }
                         }
                     }
