@@ -24,6 +24,7 @@ struct AddSong: View {
     @State private var albumName = ""
     @State private var songName = ""
     @State private var genre = ""
+    @State private var link = ""
     @State private var releaseDate = Date()
     @State private var ratingIndex = 2  // Default: "Average"
    
@@ -58,6 +59,9 @@ struct AddSong: View {
                 }
                 Section(header: Text("Genre(s)")) {
                     TextField("Enter Genre(s)", text: $genre)
+                }
+                Section(header: Text("Apple Music Link")) {
+                    TextField("Enter Link", text: $link)
                 }
                 Section(header: Text("Release Date")) {
                     DatePicker(
@@ -219,6 +223,7 @@ struct AddSong: View {
         newSong.genre = self.genre
         newSong.releaseDate = releaseDateString
         newSong.rating = self.ratingChoices[ratingIndex]
+        newSong.musicVideoID = self.link
        
         /*
          ======================================================

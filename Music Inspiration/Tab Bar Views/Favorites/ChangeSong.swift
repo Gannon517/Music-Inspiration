@@ -26,6 +26,7 @@ struct ChangeSong: View {
     @State private var albumName = ""
     @State private var songName = ""
     @State private var genre = ""
+    @State private var link = ""
     @State private var releaseDate = Date()
     @State private var ratingIndex = -1
    
@@ -37,6 +38,7 @@ struct ChangeSong: View {
     @State private var changeReleaseDate = false
     @State private var changeRating = false
     @State private var changeCoverPhoto = false
+    @State private var changeLink = false
    
     // Album Cover Photo
     @State private var showImagePicker = false
@@ -69,6 +71,9 @@ struct ChangeSong: View {
                 }
                 Section(header: Text("Genre(s)")) {
                     genreSubview
+                }
+                Section(header: Text("Apple Music Link")) {
+                    musicLinkSubview
                 }
             }
             Group {
@@ -133,7 +138,7 @@ struct ChangeSong: View {
                     Button(action: {
                         self.changeArtistName.toggle()
                     }) {
-                        Image(systemName: "pencil.circle")
+                        Image(systemName: self.changeArtistName ? "xmark.circle":"pencil.circle")
                             .imageScale(.large)
                             .foregroundColor(.blue)
                     }
@@ -154,7 +159,7 @@ struct ChangeSong: View {
                     Button(action: {
                         self.changeAlbumName.toggle()
                     }) {
-                        Image(systemName: "pencil.circle")
+                        Image(systemName: self.changeAlbumName ? "xmark.circle":"pencil.circle")
                             .imageScale(.large)
                             .foregroundColor(.blue)
                     }
@@ -175,7 +180,7 @@ struct ChangeSong: View {
                     Button(action: {
                         self.changeSongName.toggle()
                     }) {
-                        Image(systemName: "pencil.circle")
+                        Image(systemName: self.changeSongName ? "xmark.circle":"pencil.circle")
                             .imageScale(.large)
                             .foregroundColor(.blue)
                     }
@@ -196,7 +201,7 @@ struct ChangeSong: View {
                     Button(action: {
                         self.changeGenre.toggle()
                     }) {
-                        Image(systemName: "pencil.circle")
+                        Image(systemName: self.changeGenre ? "xmark.circle":"pencil.circle")
                             .imageScale(.large)
                             .foregroundColor(.blue)
                     }
@@ -204,6 +209,27 @@ struct ChangeSong: View {
                 if self.changeGenre {
                     TextField("Enter New Genre(s)", text: $genre)
                          .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
+            }
+        )
+    }
+    
+    var musicLinkSubview: some View {
+        return AnyView(
+            VStack {
+                HStack {
+                    Text(song.musicVideoID ?? "")
+                    Button(action: {
+                        self.changeLink.toggle()
+                    }) {
+                        Image(systemName: self.changeLink ? "xmark.circle":"pencil.circle")
+                            .imageScale(.large)
+                            .foregroundColor(.blue)
+                    }
+                    if self.changeGenre {
+                        TextField("Enter New Link", text: $link)
+                             .textFieldStyle(RoundedBorderTextFieldStyle())
+                    }
                 }
             }
         )
@@ -216,7 +242,7 @@ struct ChangeSong: View {
                 Button(action: {
                     self.changeReleaseDate.toggle()
                 }) {
-                    Image(systemName: "pencil.circle")
+                    Image(systemName: self.changeReleaseDate ? "xmark.circle":"pencil.circle")
                         .imageScale(.large)
                         .foregroundColor(.blue)
                 }
@@ -242,7 +268,7 @@ struct ChangeSong: View {
                 Button(action: {
                     self.changeRating.toggle()
                 }) {
-                    Image(systemName: "pencil.circle")
+                    Image(systemName: self.changeRating ? "xmark.circle":"pencil.circle")
                         .imageScale(.large)
                         .foregroundColor(.blue)
                 }
@@ -275,7 +301,7 @@ struct ChangeSong: View {
                     Button(action: {
                         self.changeCoverPhoto.toggle()
                     }) {
-                        Image(systemName: "pencil.circle")
+                        Image(systemName: self.changeCoverPhoto ? "xmark.circle":"pencil.circle")
                             .imageScale(.large)
                             .foregroundColor(.blue)
                     }
@@ -369,6 +395,9 @@ struct ChangeSong: View {
         }
         if self.genre != "" {
             song.genre = self.genre
+        }
+        if self.link != "" {
+            song.musicVideoID = self.link
         }
         if self.releaseDate != Date() {
             // Instantiate a DateFormatter object

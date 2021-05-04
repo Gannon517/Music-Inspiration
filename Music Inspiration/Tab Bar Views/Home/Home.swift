@@ -27,7 +27,7 @@ struct Home: View {
             Text("Powered By:")
                 .padding(.bottom, 20)
             
-            Link(destination: URL(string: "https://www.google.com")!) {
+            Link(destination: URL(string: "https://www.theaudiodb.com")!) {
                 HStack {
                     Image(systemName: "gearshape.2")
                     Text("Musci DB API")

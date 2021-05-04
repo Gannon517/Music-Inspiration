@@ -17,7 +17,7 @@ struct FirstLogin: View {
     @State private var showValues = false
     @State private var showUnmatchedPasswordAlert = false
     @State private var showPasswordSetAlert = false
-    
+    @State private var needToEnterPassword = false
     
     let securityQuestionList = ["What is your mothers maiden name?"]
     @State private var selectedIndex = 0
@@ -120,11 +120,11 @@ struct FirstLogin: View {
                         Button(action: {
                             if !passwordEntered.isEmpty {
                                 if passwordEntered == passwordVerified {
+                                    userData.userAuthenticated = true
                                     UserDefaults.standard.set(self.passwordEntered, forKey: "Password")
                                     if !self.securityQuestion.isEmpty {
                                         UserDefaults.standard.set(self.securityQuestionList[selectedIndex], forKey: "SecurityQuestion")
                                         UserDefaults.standard.set(self.securityQuestion, forKey: "SecurityAnswer")
-                                        userData.userAuthenticated = true
                                     }
                                     self.securityQuestion = ""
                                     self.passwordEntered = ""
@@ -134,6 +134,8 @@ struct FirstLogin: View {
                                 else {
                                     self.showUnmatchedPasswordAlert = true
                                 }
+                            } else {
+                                self.needToEnterPassword = true
                             }
                         }) {
                             Text("Set Password and Login")
@@ -148,6 +150,7 @@ struct FirstLogin: View {
                 }//End Form
                 .alert(isPresented: $showPasswordSetAlert, content: { self.passwordSetAlert })
             }//End ZStack
+            .alert(isPresented: $needToEnterPassword, content: {self.enterPasswordAlert})
         //}//End Nav View
     }
     /*
@@ -159,6 +162,12 @@ struct FirstLogin: View {
         Alert(title: Text("Password Set!"),
               message: Text("Password you entered is set to unlock the app!"),
               dismissButton: .default(Text("OK")) )
+    }
+    
+    var enterPasswordAlert: Alert {
+        Alert(title: Text("No Password Entered"),
+              message: Text("You have not entered a password!"),
+              dismissButton: .default(Text("OK")))
     }
     
     /*
