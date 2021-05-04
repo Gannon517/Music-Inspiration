@@ -15,6 +15,9 @@ struct ContentView: View {
         if userData.userAuthenticated {
             return AnyView(MainView())
         }
+        else if UserDefaults.standard.string(forKey: "Password") == nil {
+            return AnyView(FirstLogin())
+        }
         else {
             return AnyView(LoginView())
         }

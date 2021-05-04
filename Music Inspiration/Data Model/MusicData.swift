@@ -81,6 +81,7 @@ func populateDatabase() {
         songEntity.genre = album.genre
         songEntity.releaseDate = album.releaseDate
         songEntity.rating = album.rating
+        songEntity.musicVideoID = album.musicVideID
  
         /*
          ======================================================

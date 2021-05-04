@@ -16,6 +16,7 @@ public class Song: NSManagedObject, Identifiable {
     @NSManaged public var rating: String?
     @NSManaged public var releaseDate: String?
     @NSManaged public var songName: String?
+    @NSManaged public var musicVideoID: String?
     @NSManaged public var photo: Photo?
 }
 

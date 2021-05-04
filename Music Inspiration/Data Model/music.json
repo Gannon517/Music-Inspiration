@@ -7,7 +7,7 @@
         "rating": "Excellent",
         "releaseDate": "February 14, 2020",
         "coverPhotoFilename": "TameImpala_TheSlowRush",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/one-more-year/1497230760?i=1497230960"
     },
     {
         "artistName": "Rod Stewart",
@@ -17,7 +17,7 @@
         "rating": "Good",
         "releaseDate": "November 22, 2019",
         "coverPhotoFilename": "RodStewart_YouAreInMyHeart",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/maggie-may/1423308939?i=1423309456"
     },
     {
         "artistName": "Eminem",
@@ -27,7 +27,7 @@
         "rating": "Fair",
         "releaseDate": "January 17, 2020",
         "coverPhotoFilename": "Eminem_MusicToBeMurderedBy",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/darkness/1495267282?i=1495267452"
     },
     {
         "artistName": "Justin Bieber",
@@ -37,7 +37,7 @@
         "rating": "Average",
         "releaseDate": "February 14, 2020",
         "coverPhotoFilename": "JustinBieber_Changes",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/changes/1496639180"
     },
     {
         "artistName": "Selena Gomez",
@@ -47,7 +47,7 @@
         "rating": "Excellent",
         "releaseDate": "January 10, 2020",
         "coverPhotoFilename": "SelenaGomez_Rare",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/dance-again/1488413282?i=1488413284"
     },
     {
         "artistName": "Weyes Blood",
@@ -57,7 +57,7 @@
         "rating": "Good",
         "releaseDate": "April 5, 2019",
         "coverPhotoFilename": "WeyesBlood_TitanicRising",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/andromeda/1450550344?i=1450550346"
     },
     {
         "artistName": "Dua Lipa",
@@ -67,7 +67,7 @@
         "rating": "Good",
         "releaseDate": "March 25, 2020",
         "coverPhotoFilename": "DuaLipa_FutureNostalgia",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/break-my-heart/1538003494?i=1538004012"
     },
     {
         "artistName": "Fiona Apple",
@@ -77,7 +77,7 @@
         "rating": "Excellent",
         "releaseDate": "April 17, 2020",
         "coverPhotoFilename": "FionaApple_FetchTheBoltCutters",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/fetch-the-bolt-cutters/1507811635"
     },
     {
         "artistName": "Taylor Swift",
@@ -87,7 +87,7 @@
         "rating": "Excellent",
         "releaseDate": "October 20, 2017",
         "coverPhotoFilename": "TaylorSwift_Reputation",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/gorgeous/1440933849?i=1440934258"
     },
     {
         "artistName": "Beyoncé",
@@ -97,7 +97,7 @@
         "rating": "Good",
         "releaseDate": "April 23, 2016",
         "coverPhotoFilename": "Beyonce_Lemonade",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/hold-up/1460430561?i=1460430670"
     },
     {
         "artistName": "Lady Gaga and Bradley Cooper",
@@ -107,7 +107,7 @@
         "rating": "Average",
         "releaseDate": "September 27, 2018",
         "coverPhotoFilename": "LadyGagaBradleyCooper_AStarIsBorn",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/shallow/1434371867?i=1434371887"
     },
     {
         "artistName": "Kacey Musgraves",
@@ -117,7 +117,7 @@
         "rating": "Fair",
         "releaseDate": "March 30, 2018",
         "coverPhotoFilename": "KaceyMusgraves_GoldenHour",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/space-cowboy/1440918116?i=1440918126"
     },
     {
         "artistName": "Ariana Grande",
@@ -127,7 +127,7 @@
         "rating": "Excellent",
         "releaseDate": "August 17, 2018",
         "coverPhotoFilename": "ArianaGrande_Sweetner",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/no-tears-left-to-cry/1399202900?i=1399204228"
     },
     {
         "artistName": "Selena Gomez",
@@ -137,7 +137,7 @@
         "rating": "Good",
         "releaseDate": "October 9, 2015",
         "coverPhotoFilename": "SelenaGomez_Revival",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/hands-to-myself/1440826257?i=1440826555"
     },
     {
         "artistName": "Katy Perry",
@@ -147,7 +147,7 @@
         "rating": "Average",
         "releaseDate": "June 9, 2017",
         "coverPhotoFilename": "KatyPerry_Witness",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/bon-appétit-feat-migos/1395619660?i=1395620512"
     },
     {
         "artistName": "Carrie Underwood",
@@ -157,7 +157,7 @@
         "rating": "Fair",
         "releaseDate": "September 14, 2018",
         "coverPhotoFilename": "CarrieUnderwood_CryPretty",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/ghosts-on-the-stereo/1432044881?i=1432044892"
     },
     {
         "artistName": "Ludwig Goransson",
@@ -167,7 +167,7 @@
         "rating": "Excellent",
         "releaseDate": "February 9, 2018",
         "coverPhotoFilename": "LudwigGoransson_BlackPanther",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/all-the-stars/1440906927?i=1440906939"
     },
     {
         "artistName": "Miley Cyrus",
@@ -177,7 +177,7 @@
         "rating": "Good",
         "releaseDate": "September 29, 2017",
         "coverPhotoFilename": "MileyCyrus_YoungerNow",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/younger-now/1462327574?i=1462327576"
     },
     {
         "artistName": "Queen",
@@ -187,7 +187,7 @@
         "rating": "Excellent",
         "releaseDate": "October 19, 2018",
         "coverPhotoFilename": "Queen_BohemianRhapsody",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/bohemian-rhapsody-the-original-soundtrack/1434899831"
     },
     {
         "artistName": "George Ezra",
@@ -197,6 +197,6 @@
         "rating": "Average",
         "releaseDate": "March 23, 2018",
         "coverPhotoFilename": "GeorgeEzra_StayingAtTamaras",
-        "musicVideID": "lol"
+        "musicVideID": "https://music.apple.com/us/album/paradise/1331589118?i=1331589488"
     }
 ]

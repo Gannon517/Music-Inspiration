@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E65936D2640EDCB00BCF3A6 /* FirstLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E65936C2640EDCA00BCF3A6 /* FirstLogin.swift */; };
 		3EB13273263388750053B664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB13272263388750053B664 /* AppDelegate.swift */; };
 		3EB13275263388750053B664 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB13274263388750053B664 /* SceneDelegate.swift */; };
 		3EB13277263388750053B664 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB13276263388750053B664 /* ContentView.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E65936C2640EDCA00BCF3A6 /* FirstLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLogin.swift; sourceTree = "<group>"; };
 		3EB1326F263388750053B664 /* Music Inspiration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music Inspiration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB13272263388750053B664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EB13274263388750053B664 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				3EB132A72637C9510053B664 /* MainView.swift */,
 				3EB132AA2637C95A0053B664 /* LoginView.swift */,
 				3EB132AD2637C9650053B664 /* ForgotPassword.swift */,
+				3E65936C2640EDCA00BCF3A6 /* FirstLogin.swift */,
 			);
 			path = "Startup Views";
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				3EB132932637BE850053B664 /* PhotoCaptureView.swift in Sources */,
 				3EE1939B2637DE5700B695F7 /* SongList.swift in Sources */,
 				4B1F7AA026387AA70072743A /* WebView.swift in Sources */,
+				3E65936D2640EDCB00BCF3A6 /* FirstLogin.swift in Sources */,
 				3EB132AE2637C9650053B664 /* ForgotPassword.swift in Sources */,
 				3EB132A52637C9370053B664 /* UserData.swift in Sources */,
 				3EB1329B2637BEC20053B664 /* Home.swift in Sources */,
