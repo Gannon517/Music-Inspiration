@@ -16,7 +16,7 @@ struct SearchByArtist: View {
     @State private var showProgressView = false
     
     var body: some View {
-        NavigationView {
+        //NavigationView {
             ZStack {
                 Color.gray.opacity(0.1).edgesIgnoringSafeArea(.all)
             Form {
@@ -128,7 +128,7 @@ struct SearchByArtist: View {
                 
             }   // End of ZStack
             
-        }   // End of NavigationView
+        //}   // End of NavigationView
         // Use single column navigation view for iPhone and iPad
         .navigationViewStyle(StackNavigationViewStyle())
         

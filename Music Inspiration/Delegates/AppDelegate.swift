@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         getApiDataByArtistName(artistName: "lil_baby")
         getItunesTopSongs(artistName: "jm")
         var i = 0
-        for id in topChartIds{
+        for _ in topChartIds{
             getChartsInfo(index: i)
             i = i + 1
         }

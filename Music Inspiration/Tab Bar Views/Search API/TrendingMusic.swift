@@ -18,5 +18,6 @@ struct TrendingMusic: View {
                     }
                 }
             }
+            .navigationBarTitle(Text("Trending Music"), displayMode: .inline)
     }
 }
