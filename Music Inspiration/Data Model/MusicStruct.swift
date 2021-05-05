@@ -9,8 +9,8 @@ import SwiftUI
 
 import Foundation
  
-struct MusicAlbum: Decodable {
-   
+struct MusicAlbum: Decodable, Identifiable{
+    var id: String
     var artistName: String
     var albumName: String
     var songName: String

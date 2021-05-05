@@ -44,6 +44,8 @@
 		3EE193BC2637E32E00B695F7 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE193BB2637E32E00B695F7 /* SearchAPI.swift */; };
 		4B1F7A9B263843BE0072743A /* MusicStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F7A9A263843BE0072743A /* MusicStruct.swift */; };
 		4B1F7AA026387AA70072743A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F7A9F26387AA70072743A /* WebView.swift */; };
+		4B36894E2642F831005ABCC4 /* TrendingMusicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B36894D2642F831005ABCC4 /* TrendingMusicItem.swift */; };
+		4B3689512642F848005ABCC4 /* TrendingMusicDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3689502642F848005ABCC4 /* TrendingMusicDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,8 @@
 		3EE193BB2637E32E00B695F7 /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
 		4B1F7A9A263843BE0072743A /* MusicStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicStruct.swift; sourceTree = "<group>"; };
 		4B1F7A9F26387AA70072743A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		4B36894D2642F831005ABCC4 /* TrendingMusicItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMusicItem.swift; sourceTree = "<group>"; };
+		4B3689502642F848005ABCC4 /* TrendingMusicDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMusicDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +272,8 @@
 				3EE193BB2637E32E00B695F7 /* SearchAPI.swift */,
 				3E65936F264129C100BCF3A6 /* SearchByArtist.swift */,
 				3E65937726412CB100BCF3A6 /* TrendingMusic.swift */,
+				4B36894D2642F831005ABCC4 /* TrendingMusicItem.swift */,
+				4B3689502642F848005ABCC4 /* TrendingMusicDetails.swift */,
 			);
 			path = "Search API";
 			sourceTree = "<group>";
@@ -344,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EB13273263388750053B664 /* AppDelegate.swift in Sources */,
+				4B3689512642F848005ABCC4 /* TrendingMusicDetails.swift in Sources */,
 				3EB13275263388750053B664 /* SceneDelegate.swift in Sources */,
 				3EB1327A263388760053B664 /* Music_Inspiration.xcdatamodeld in Sources */,
 				3E659370264129C100BCF3A6 /* SearchByArtist.swift in Sources */,
@@ -360,6 +367,7 @@
 				3EB132AB2637C95A0053B664 /* LoginView.swift in Sources */,
 				3EB13277263388750053B664 /* ContentView.swift in Sources */,
 				3EB132A82637C9510053B664 /* MainView.swift in Sources */,
+				4B36894E2642F831005ABCC4 /* TrendingMusicItem.swift in Sources */,
 				3EE193A82637DECB00B695F7 /* ChangeSong.swift in Sources */,
 				3EB132932637BE850053B664 /* PhotoCaptureView.swift in Sources */,
 				3EE1939B2637DE5700B695F7 /* SongList.swift in Sources */,
