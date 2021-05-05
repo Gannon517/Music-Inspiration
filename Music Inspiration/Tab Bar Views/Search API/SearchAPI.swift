@@ -38,7 +38,7 @@ struct SearchAPI: View {
                                 .imageScale(.large)
                                 .font(Font.title.weight(.regular))
                                 .foregroundColor(.blue)
-                            Text("Search Music by Artist")
+                            Text("Search Music by Artist & Song Name")
                                 .font(.system(size: 22))
                         }
                         .frame(minWidth: 300, maxWidth: 500, alignment:.leading)
