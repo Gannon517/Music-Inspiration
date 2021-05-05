@@ -227,7 +227,7 @@ struct ChangeSong: View {
                             .foregroundColor(.blue)
                     }
                     if self.changeGenre {
-                        TextField("Enter New Link", text: $link)
+                        TextField("Enter New Youtube Link", text: $link)
                              .textFieldStyle(RoundedBorderTextFieldStyle())
                     }
                 }

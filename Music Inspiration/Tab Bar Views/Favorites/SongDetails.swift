@@ -59,23 +59,22 @@ struct SongDetails: View {
             Section(header: Text("My Rating")) {
                 Text(song.rating ?? "")
             }
-            Section(header: Text("Play Song on Apple Music")) {
-                Link(destination: URL(string: song.musicVideoID ?? "https://music.apple.com/us/album/bohemian-rhapsody-the-original-soundtrack/1434899831")!
-                                //.navigationBarTitle(Text("Play Song"), displayMode: .inline)
+            Section(header: Text("PLAY Song on Youtube")) {
+                NavigationLink(destination:
+                                WebView(url: song.musicVideoID ?? "http://www.google.com")
+                                .navigationBarTitle(Text("Play Song"), displayMode: .inline)
                 ){
                     HStack {
-                        Image(systemName: "play.fill")
+                        Image(systemName: "play.rectangle.fill")
                             .imageScale(.medium)
                             .font(Font.title.weight(.regular))
-                            .foregroundColor(.blue)
-                        Text("Play Song on Apple Music")
+                            .foregroundColor(.red)
+                        Text("Play YouTube Trailer")
                             .font(.system(size: 16))
                             .foregroundColor(.blue)
                     }
                     .frame(minWidth: 300, maxWidth: 500, alignment: .leading)
                 }
-                
-                
             }
 
  
