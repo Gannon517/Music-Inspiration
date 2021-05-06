@@ -91,6 +91,7 @@ struct SongDetails: View {
             Section(header: Text("My Rating")) {
                 Text(song.rating ?? "")
             }
+            if song.audio!.voiceRecording == nil {
             Section(header: Text("PLAY Song on Youtube")) {
                 NavigationLink(destination:
                                 WebView(url: song.musicVideoID ?? "http://www.google.com")
@@ -107,6 +108,7 @@ struct SongDetails: View {
                     }
                     .frame(minWidth: 300, maxWidth: 500, alignment: .leading)
                 }
+            }
             }
 
  
