@@ -11,5 +11,6 @@ import CoreData
 public class Photo: NSManagedObject, Identifiable {
  
     @NSManaged public var albumCoverPhoto: Data?
+    @NSManaged public var photoUrl: String?
     @NSManaged public var song: Song?
 }

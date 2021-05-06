@@ -21,11 +21,20 @@ struct SongItem: View {
    
     var body: some View {
         HStack {
+            if (song.photo!.photoUrl == ""){
+                getImageFromBinaryData(binaryData: song.photo!.albumCoverPhoto!, defaultFilename: "AlbumCoverDefaultImage")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 80.0)
+            }
+            else{
+                getImageFromUrl(url: song.photo!.photoUrl ?? "", defaultFilename: "AlbumCoverDefaultImage")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 80.0)
+            }
             // This public function is given in UtilityFunctions.swift
-            getImageFromBinaryData(binaryData: song.photo!.albumCoverPhoto!, defaultFilename: "AlbumCoverDefaultImage")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 80.0)
+            
            
             VStack(alignment: .leading) {
                 /*

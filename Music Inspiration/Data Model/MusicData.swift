@@ -100,6 +100,7 @@ func populateDatabase() {
        
         // Assign photoData to Core Data entity attribute of type Data (Binary Data)
         photoEntity.albumCoverPhoto = photoData!
+        photoEntity.photoUrl = ""
        
         /*
          ==============================

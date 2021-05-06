@@ -38,11 +38,19 @@ struct SongDetails: View {
                 Text(song.albumName ?? "")
             }
             Section(header: Text("Album Cover Photo")) {
+                if (song.photo!.photoUrl == ""){
+                    getImageFromBinaryData(binaryData: song.photo!.albumCoverPhoto!, defaultFilename: "AlbumCoverDefaultImage")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(minWidth: 300, maxWidth: 500, alignment: .center)
+                }
+                else{
+                    getImageFromUrl(url: (song.photo?.photoUrl)!, defaultFilename: "AlbumCoverDefaultImage")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(minWidth: 300, maxWidth: 500, alignment: .center)
+                }
                 // This public function is given in UtilityFunctions.swift
-                getImageFromBinaryData(binaryData: song.photo!.albumCoverPhoto!, defaultFilename: "AlbumCoverDefaultImage")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(minWidth: 300, maxWidth: 500, alignment: .center)
             }
             Section(header: Text("Artist Name")) {
                 Text(song.artistName ?? "")
