@@ -53,6 +53,8 @@
 	</array>
 	<key>NSFaceIDUsageDescription</key>
 	<string>Music Inspiration uses FaceID for easier login </string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Music Inspiration needs your permission to use the microphone to record your song.</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

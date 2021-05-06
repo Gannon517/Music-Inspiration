@@ -293,10 +293,18 @@ struct ChangeSong: View {
             VStack {
                 HStack {
                     // This public function is given in UtilityFunctions.swift
-                    getImageFromBinaryData(binaryData: song.photo!.albumCoverPhoto!, defaultFilename: "AlbumCoverDefaultImage")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 100.0, height: 100.0)
+                    if (song.photo!.photoUrl == ""){
+                        getImageFromBinaryData(binaryData: song.photo!.albumCoverPhoto!, defaultFilename: "AlbumCoverDefaultImage")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 100.0, height: 100.0)
+                    }
+                    else{
+                        getImageFromUrl(url: (song.photo?.photoUrl)!, defaultFilename: "AlbumCoverDefaultImage")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 100.0, height: 100.0)
+                    }
                    
                     Button(action: {
                         self.changeCoverPhoto.toggle()

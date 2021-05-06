@@ -114,12 +114,14 @@ struct SongDetails: View {
         .navigationBarTitle(Text("Song Details"), displayMode: .inline)
         .font(.system(size: 14))
         .onAppear() {
-            if let recordedVoiceNotes = song.audio?.voiceRecording {
-                self.audioPlayer.createAudioPlayer(audioData: recordedVoiceNotes)
+            if song.audio?.voiceRecording != nil{
+                if let recordedVoiceNotes = song.audio?.voiceRecording {
+                    self.audioPlayer.createAudioPlayer(audioData: recordedVoiceNotes)
+                }
             }
         }
         .onDisappear() {
-            if (song.audio?.voiceRecording) != nil {
+            if song.audio?.voiceRecording != nil{
                 self.audioPlayer.stopAudioPlayer()
             }
         }
