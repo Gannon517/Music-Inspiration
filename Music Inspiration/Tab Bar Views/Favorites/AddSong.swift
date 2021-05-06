@@ -5,9 +5,15 @@
 //  Created by Michael Gannon on 4/27/21.
 //
 
+import Foundation
 import SwiftUI
 import CoreData
- 
+import CoreLocation
+import Speech
+import AVFoundation
+
+// Store the recorded voice notes audio data into a temporary file
+let temporaryAudioFileUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("temp.m4a")
 struct AddSong: View {
    
     // Enable this View to be dismissed to go back when the Save button is tapped
@@ -45,6 +51,8 @@ struct AddSong: View {
         return minDate...maxDate
     }
    
+    @State private var recordingVoice = false
+    
     var body: some View {
         Form {
             Group {
@@ -60,7 +68,14 @@ struct AddSong: View {
                 Section(header: Text("Genre(s)")) {
                     TextField("Enter Genre(s)", text: $genre)
                 }
-                Section(header: Text("Apple Music Link")) {
+                Section(header: Text("Record your song")) {
+                    Button(action: {
+                        self.voiceRecordingMicrophoneTapped()
+                    }) {
+                        voiceRecordingMicrophoneLabel
+                    }
+                }
+                Section(header: Text("YouTube Music Link")) {
                     TextField("Enter Link", text: $link)
                 }
                 Section(header: Text("Release Date")) {
@@ -190,6 +205,84 @@ struct AddSong: View {
         return true
     }
     
+    /*
+     ***************************************************************
+     |              Record Song by           *
+     ***************************************************************
+     */
+    
+    /*
+     ----------------------------------------
+     MARK: - Voice Recording Microphone Label
+     ----------------------------------------
+     */
+    var voiceRecordingMicrophoneLabel: some View {
+        VStack {
+            Image(systemName: recordingVoice ? "mic.fill" : "mic.slash.fill")
+                .imageScale(.large)
+                .font(Font.title.weight(.medium))
+                .foregroundColor(.blue)
+                .padding()
+            Text(recordingVoice ? "Recording your voice... Tap to Stop!" : "Start Recording!")
+                .multilineTextAlignment(.center)
+        }
+    }
+    
+    /*
+     ---------------------------------------
+     MARK: Voice Recording Microphone Tapped
+     ---------------------------------------
+     */
+    func voiceRecordingMicrophoneTapped() {
+        if audioRecorder == nil {
+            self.recordingVoice = true
+            startRecording()
+        } else {
+            self.recordingVoice = false
+            finishRecording()
+        }
+    }
+    
+    /*
+     ----------------------------------
+     MARK: Finish Voice Notes Recording
+     ----------------------------------
+     */
+    func finishRecording() {
+        audioRecorder.stop()
+        audioRecorder = nil
+        self.recordingVoice = false
+    }
+    
+    /*
+     ---------------------------------
+     MARK: Start Voice Notes Recording
+     ---------------------------------
+     */
+    func startRecording() {
+        
+        let settings = [
+            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+            AVSampleRateKey: 12000,
+            AVNumberOfChannelsKey: 1,
+            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+        ]
+        
+        do {
+            // Delete the temporary file at
+            try FileManager.default.removeItem(at: temporaryAudioFileUrl)
+        } catch {
+            // Take no action
+        }
+        
+        do {
+            audioRecorder = try AVAudioRecorder(url: temporaryAudioFileUrl, settings: settings)
+            audioRecorder.record()
+        } catch {
+            finishRecording()
+        }
+    }
+    
    
     /*
      ---------------------
@@ -247,6 +340,26 @@ struct AddSong: View {
             // Assign photoData to Core Data entity attribute of type Data (Binary Data)
             newPhoto.albumCoverPhoto = photoData!
         }
+        
+        /*
+         ======================================================
+         Create an instance of the Audio Entity and dress it up
+         ======================================================
+         */
+        // ❎ Create an instance of the Audio Entity in CoreData managedObjectContext
+        let aAudio = Audio(context: self.managedObjectContext)
+        
+        // ❎ Dress it up by specifying its attribute
+        do {
+            // Try to get the audio file data from audioFileUrl
+            aAudio.voiceRecording = try Data(contentsOf: temporaryAudioFileUrl, options: NSData.ReadingOptions.mappedIfSafe)
+            
+        } catch {
+            aAudio.voiceRecording = nil
+        }
+        
+        
+
        
         /*
          ==============================
@@ -257,6 +370,9 @@ struct AddSong: View {
         // Establish One-to-One Relationship between Song and Photo
         newSong.photo = newPhoto
         newPhoto.song = newSong
+        
+        newSong.audio = aAudio
+        aAudio.song = newSong
        
         /*
          =============================================

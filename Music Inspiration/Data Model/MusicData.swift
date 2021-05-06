@@ -101,6 +101,9 @@ func populateDatabase() {
         // Assign photoData to Core Data entity attribute of type Data (Binary Data)
         photoEntity.albumCoverPhoto = photoData!
         photoEntity.photoUrl = ""
+        
+        let aAudio = Audio(context: managedObjectContext)
+        aAudio.voiceRecording = nil
        
         /*
          ==============================
@@ -111,6 +114,9 @@ func populateDatabase() {
         // ❎ Establish Relationship between entities Song and Photo
         songEntity.photo = photoEntity
         photoEntity.song = songEntity
+        
+        songEntity.audio = aAudio
+        aAudio.song = songEntity
        
         /*
          ==================================

@@ -18,6 +18,9 @@ struct SongDetails: View {
     // ❎ Refresh this view upon notification that the managedObjectContext completed a save.
     // Upon refresh, @FetchRequest is re-executed fetching all Song entities with all the changes.
     @EnvironmentObject var userData: UserData
+    
+    // Subscribe to changes in AudioPlayer
+    @EnvironmentObject var audioPlayer: AudioPlayer
    
     var body: some View {
         Form {
@@ -61,6 +64,27 @@ struct SongDetails: View {
             Section(header: Text("Genre")) {
                 Text(song.genre ?? "")
             }
+            if song.audio!.voiceRecording != nil {
+                Section(header: Text("Play Recorded Song")) {
+                    Button(action: {
+                        if self.audioPlayer.isPlaying {
+                            self.audioPlayer.pauseAudioPlayer()
+                        } else {
+                            self.audioPlayer.startAudioPlayer()
+                        }
+                    }) {
+                        HStack {
+                            Image(systemName: self.audioPlayer.isPlaying ? "pause.fill" : "play.fill")
+                                .imageScale(.medium)
+                                .font(Font.title.weight(.regular))
+                            Text("Play Song")
+                                .font(.system(size: 16))
+                                .foregroundColor(.blue)
+                        }
+                        .frame(minWidth: 300, maxWidth: 500, alignment: .leading)
+                    }
+                }
+            }
             Section(header: Text("Release Date")) {
                 Text(song.releaseDate ?? "")
             }
@@ -89,6 +113,14 @@ struct SongDetails: View {
         }   // End of Form
         .navigationBarTitle(Text("Song Details"), displayMode: .inline)
         .font(.system(size: 14))
+        .onAppear() {
+            if let recordedVoiceNotes = song.audio!.voiceRecording {
+                self.audioPlayer.createAudioPlayer(audioData: recordedVoiceNotes)
+            }
+        }
+        .onDisappear() {
+            self.audioPlayer.stopAudioPlayer()
+        }
        
     }   // End of body
 }

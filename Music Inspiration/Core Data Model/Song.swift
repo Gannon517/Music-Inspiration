@@ -18,6 +18,7 @@ public class Song: NSManagedObject, Identifiable {
     @NSManaged public var songName: String?
     @NSManaged public var musicVideoID: String?
     @NSManaged public var photo: Photo?
+    @NSManaged public var audio: Audio?
 }
 
 extension Song {
