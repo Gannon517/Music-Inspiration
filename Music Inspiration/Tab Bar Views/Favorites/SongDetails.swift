@@ -48,7 +48,7 @@ struct SongDetails: View {
                         .frame(minWidth: 300, maxWidth: 500, alignment: .center)
                 }
                 else{
-                    getImageFromUrl(url: (song.photo?.photoUrl)!, defaultFilename: "AlbumCoverDefaultImage")
+                    getImageFromUrl(url: song.photo!.photoUrl ?? "", defaultFilename: "AlbumCoverDefaultImage")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(minWidth: 300, maxWidth: 500, alignment: .center)
