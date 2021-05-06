@@ -340,6 +340,7 @@ struct AddSong: View {
             // Assign photoData to Core Data entity attribute of type Data (Binary Data)
             newPhoto.albumCoverPhoto = photoData!
         }
+        newPhoto.photoUrl = ""
         
         /*
          ======================================================
