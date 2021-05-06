@@ -321,6 +321,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "Michael Gannon and Gurkaran Nibber";
 				TargetAttributes = {
 					3EB1326E263388750053B664 = {
 						CreatedOnToolsVersion = 12.4;

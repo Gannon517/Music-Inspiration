@@ -4,6 +4,8 @@
 //
 //  Created by Michael Gannon on 5/3/21.
 //
+//  Copyright © 2021 Michael Gannon and Gurkaran Nibber. All rights reserved.
+//
 
 import SwiftUI
 

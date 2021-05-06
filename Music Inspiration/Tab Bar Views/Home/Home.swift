@@ -4,7 +4,8 @@
 //
 //  Created by Michael Gannon on 4/26/21.
 //
-
+//  Copyright © 2021 Michael Gannon and Gurkaran Nibber. All rights reserved.
+//
 import SwiftUI
 
 struct Home: View {
