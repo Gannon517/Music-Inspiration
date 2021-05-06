@@ -64,7 +64,7 @@ struct SongDetails: View {
             Section(header: Text("Genre")) {
                 Text(song.genre ?? "")
             }
-            if song.audio!.voiceRecording != nil {
+            if song.audio?.voiceRecording != nil {
                 Section(header: Text("Play Recorded Song")) {
                     Button(action: {
                         if self.audioPlayer.isPlaying {
@@ -114,12 +114,14 @@ struct SongDetails: View {
         .navigationBarTitle(Text("Song Details"), displayMode: .inline)
         .font(.system(size: 14))
         .onAppear() {
-            if let recordedVoiceNotes = song.audio!.voiceRecording {
+            if let recordedVoiceNotes = song.audio?.voiceRecording {
                 self.audioPlayer.createAudioPlayer(audioData: recordedVoiceNotes)
             }
         }
         .onDisappear() {
-            self.audioPlayer.stopAudioPlayer()
+            if (song.audio?.voiceRecording) != nil {
+                self.audioPlayer.stopAudioPlayer()
+            }
         }
        
     }   // End of body
