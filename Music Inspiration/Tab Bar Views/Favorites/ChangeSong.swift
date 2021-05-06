@@ -300,7 +300,7 @@ struct ChangeSong: View {
                             .frame(width: 100.0, height: 100.0)
                     }
                     else{
-                        getImageFromUrl(url: (song.photo?.photoUrl)!, defaultFilename: "AlbumCoverDefaultImage")
+                        getImageFromUrl(url: song.photo!.photoUrl ?? "", defaultFilename: "AlbumCoverDefaultImage")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 100.0, height: 100.0)

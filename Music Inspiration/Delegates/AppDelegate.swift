@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         createMusicAlbumDatabase()
-        getApiDataByArtistName(artistName: "lil_baby")
+        getPermissionForVoiceRecording() 
         getItunesTopSongs(artistName: "jm")
         var i = 0
         for _ in topChartIds{

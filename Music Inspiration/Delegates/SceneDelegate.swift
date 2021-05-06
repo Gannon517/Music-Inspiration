@@ -28,6 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.rootViewController = UIHostingController(rootView: ContentView()
                 .environment(\.managedObjectContext, managedObjectContext)
                 .environmentObject(UserData())
+                .environmentObject(AudioPlayer())
             )
            
             self.window = window
